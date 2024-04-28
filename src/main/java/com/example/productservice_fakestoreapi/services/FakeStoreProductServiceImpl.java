@@ -18,7 +18,7 @@ public class FakeStoreProductServiceImpl implements ProductService{
 
     @Override
     public Product getProductById(long id) {
-        //call the fakestore api to get the product with given id
+        //call the fake store api to get the product with given id
         FakeStoreProductDto fakeStoreProductDto =
                 restTemplate.getForObject("https://fakestoreapi.com/products/"+ id, FakeStoreProductDto.class);
 
